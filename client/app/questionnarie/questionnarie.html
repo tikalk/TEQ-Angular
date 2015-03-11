@@ -1,0 +1,60 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<div class="container">
+  <div class="col-md-12">
+    <form ng-submit="sendQuestionnarie()">
+      <div class="form-group">
+        <label for="group">Group</label>
+        <select id="group" class="form-control" placeholder="Group" ng-model="group">
+          <option ng-repeat="g in groups">{{g}}</option>
+        </select>
+      </div>
+      <div ng-repeat="category in categories()">
+        <h3>{{category}}</h3>
+        <div ng-repeat="sub in subCategories(category)" class="container">
+          <table class="table table-condensed">
+            <caption><h4>{{sub}}</h4></caption>
+            <thead>
+              <th>&nbsp;</th>
+              <th>Expertise</th>
+              <th>Years of Experience</th>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in data[category][sub]">
+                <td><label>{{item.title}}</label>
+                <span ng-if="item.title === 'Other'" class="pull-right">
+                  <input class="form-control" ng-model="item.otherTitle" placeholder="Please specify"/>
+                </span>
+                <span ng-if="item.options" class="pull-right">
+                  <select class="form-control" ng-model="item.specific">
+                    <option ng-repeat="op in item.options">{{op}}</option>
+                  </select>
+                </span>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <label class="btn btn-default" ng-model="item.expertise" btn-radio="'Basic'">Basic</label>
+                    <label class="btn btn-default" ng-model="item.expertise" btn-radio="'Developer'">Developer</label>
+                    <label class="btn btn-default" ng-model="item.expertise" btn-radio="'Expert'">Expert</label>
+                  </div>
+                </td>
+                <td>
+                  <input type="number" min="0" max="20" class="form-control" ng-model="item.years">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    <div ng-if="group">
+      <button class="btn btn-success">Submit</button>
+    </div>
+    </form>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>Tikal TEQ</p>
+  </div>
+</footer>
