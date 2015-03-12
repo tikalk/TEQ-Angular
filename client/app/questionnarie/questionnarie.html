@@ -1,27 +1,26 @@
-<div ng-include="'components/navbar/navbar.html'"></div>
 <div class="container">
-  <div class="col-md-12">
+  <div class="col-md-12"  ng-show="!showThankyou">
+    <h1>Tikal's {{group}} Experience Questionnaire <img id="logo" class="pull-right" src="/assets/images/logo.png"></h1>
+
     <form ng-submit="sendQuestionnarie()">
       <div class="form-group">
-        <label for="group">Group</label>
-        <select id="group" class="form-control" placeholder="Group" ng-model="group">
-          <option ng-repeat="g in groups">{{g}}</option>
-        </select>
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Please enter your name" ng-model="name" required>
       </div>
-      <div ng-repeat="category in categories()">
-        <h3>{{category}}</h3>
-        <div ng-repeat="sub in subCategories(category)" class="container">
+      <div ng-repeat="category in data">
+        <h3>{{category.title}}</h3>
+        <div ng-repeat="sub in category.content" class="container">
           <table class="table table-condensed">
-            <caption><h4>{{sub}}</h4></caption>
+            <caption><h4>{{sub.title}}</h4></caption>
             <thead>
-              <th>&nbsp;</th>
-              <th>Expertise</th>
-              <th>Years of Experience</th>
+              <th width="40%">&nbsp;</th>
+              <th width="40%">Expertise</th>
+              <th width="20%">Years of Experience</th>
             </thead>
             <tbody>
-              <tr ng-repeat="item in data[category][sub]">
+              <tr ng-repeat="item in sub.content">
                 <td><label>{{item.title}}</label>
-                <span ng-if="item.title === 'Other'" class="pull-right">
+                <span ng-if="item.type === 'specify'" class="pull-right">
                   <input class="form-control" ng-model="item.otherTitle" placeholder="Please specify"/>
                 </span>
                 <span ng-if="item.options" class="pull-right">
@@ -38,7 +37,7 @@
                   </div>
                 </td>
                 <td>
-                  <input type="number" min="0" max="20" class="form-control" ng-model="item.years">
+                  <input type="number" min="0" max="20" class="form-control" ng-model="item.years" ng-show="item.expertise">
                 </td>
               </tr>
             </tbody>
@@ -51,6 +50,10 @@
     </form>
   </div>
 
+  <div class="col-md-12"  ng-show="showThankyou">
+    <h3>Thanks {{name}}</h3>
+    <p>A representitive from Tikal will contact you shortly</p>
+  </div>
 </div>
 
 <footer class="footer">

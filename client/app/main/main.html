@@ -4,16 +4,23 @@
   <div class="container">
     <h1>Tikal TEQ</h1>
     <p class="lead">Candidate TEQ system</p>
-    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
+    <img src="assets/images/logo.png" alt="I'm Yeoman">
   </div>
 </header>
 
 <div class="container">
   <div class="row">
+
     <div class="col-lg-12">
-      <h1 class="page-header">Features:</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
-        <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}</a></li>
+      <div class="form-group">
+        <label for="name">Email to send questionnaire</label>
+        <input type="email" class="form-control" id="name" placeholder="Please enter your email" ng-model="repEmail" required>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <h1 class="page-header">Groups:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="group in groups">
+        <li><a href="/questionnarie/{{group}}/{{encodeEmail()}}" tooltip="{{group}}">{{group}}</a></li>
       </ul>
     </div>
   </div>

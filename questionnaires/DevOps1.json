@@ -1,0 +1,107 @@
+{
+  "General": {
+    "Programming Languages": [
+      {"title": "C/C++"},
+      {"title": "Java"},
+      {"title": "Javascript"},
+      {"title": "Perl"},
+      {"title": "PHP"},
+      {"title": "Ruby"},
+      {"title": "Bash / Shell"},
+      {"title": "Python"}
+    ],
+    "Database": [
+      {"title": "SQL"},
+      {"title": "Designing Database Schema"},
+      {"title": "Writing SQL Statements"},
+      {"title": "Optimization and Tuning", "type": "specify"}
+    ],
+    "MySQL": [
+      {"title": "Clustering"},
+      {"title": "Performance"},
+      {"title": "Tuning"}
+    ],
+    "NoSQL": [
+      {"title": "MongoDB"},
+      {"title": "CouchDB"},
+      {"title": "Cassandra"},
+      {"title": "Redis"},
+      {"title": "BigTable"},
+      {"title": "HBase"},
+      {"title": "Other", "type": "specify"}
+      ],
+    "BigData": [
+      {"title": "MapReduce - Hadoop"},
+      {"title": "MapReduce - Hive"},
+      {"title": "Servers - EC2"},
+      {"title": "Servers - GAE"}
+    ]
+  },
+  "Tools and Platforms": {
+    "Linux": [
+      {"title": "Linux OS administration"},
+      {"title": "Linux OS end user"},
+      {"title": "Clustering and High Availability"}
+    ],
+    "Virtualization": [
+      {"title": "KVM"},
+      {"title": "XEN"},
+      {"title": "OpenStack"},
+      {"title": "Vmware"}
+    ],
+    "Cloud": [
+      {"title": "AWS"},
+      {"title": "Azure"},
+      {"title": "Google cloud"},
+      {"title": "Rackspace"},
+      {"title": "Other", "type": "specify"}
+    ],
+    "JBoss & Tomcat": [
+      {"title": "JBoss"},
+      {"title": "Tomcat"},
+      {"title": "Clustering"},
+      {"title": "Performance"},
+      {"title": "Tuning"}
+    ],
+    "Eclipse IDE, SCM & Bug Tracking": [
+      {"title": "Bugzilla"},
+      {"title": "Jira"},
+      {"title": "Subversion"},
+      {"title": "GIT"},
+      {"title": "Mercurial"},
+      {"title": "Other", "type": "specify"}
+    ],
+    "Build Manager server": [
+      {"title": "Luntbuild"},
+      {"title": "Jenkins / Hudson"},
+      {"title": "Bamboo"},
+      {"title": "TeamCity"},
+      {"title": "Other", "type": "specify"}
+    ],
+    "CM & Deploy Tools": [
+      {"title": "Chef"},
+      {"title": "Puppet"},
+      {"title": "Ansible"},
+      {"title": "Fabric"},
+      {"title": "Capistrano"},
+      {"title": "Other", "type": "specify"}
+    ],
+    "Artifact Repository": [
+      {"title": "Artifactory"},
+      {"title": "Nexus"}
+    ],
+    "Orchestration": [
+      {"title": "CloudFormation / Opsworks"},
+      {"title": "Vagrant"},
+      {"title": "Docker"},
+      {"title": "Other", "type": "specify"}
+    ],
+    "Build script": [
+      {"title": "ANT"},
+      {"title": "Maven"},
+      {"title": "Gradle"},
+      {"title": "Make"},
+      {"title": "SBT"}
+    ]
+  }
+}

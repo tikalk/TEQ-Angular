@@ -1,35 +1,42 @@
 'use strict';
 
 angular.module('teqAngularApp')
-  .controller('QuestionnarieCtrl', function ($scope, $http) {
-    $scope.groups = ['DevOps', 'Java', 'Javascript', 'Ruby', 'Android'];
+  .controller('QuestionnarieCtrl', function ($scope, $http, $stateParams) {
 
-    $scope.data = {};
+    $scope.data = [];
+    $scope.showThankyou = false;
 
-    $scope.$watch('group', function (newVal, oldVal) {
-      console.log('oldVal:'+oldVal);
-      console.log('newVal:'+newVal);
-      if(!newVal){
-        return;
-      }
+    $scope.group = $stateParams.groupName;
 
-      $http.get(newVal + '.json').then(function (result) {
-        $scope.data = result.data;
-      }, function (error) {
-        console.log(error);
-      });
+    $http.get($stateParams.groupName + '.json').then(function (result) {
+      $scope.data = result.data;
+    }, function (error) {
+      console.log(error);
     });
 
+
     $scope.categories = function () {
-      return Object.keys($scope.data);
+      return _.pluck($scope.data, "title");
     };
 
-    $scope.subCategories = function(category){
-      return Object.keys($scope.data[category]);
+    $scope.subCategories = function(index){
+      return _.pluck($scope.data[index], "title");
     };
 
     $scope.sendQuestionnarie = function () {
+      $scope.showThankyou = false;
+      var body = {
+        replyTo: $stateParams.replyToEmail,
+        name: $scope.name,
+        group: $scope.group,
+        data: $scope.data
+      };
       console.log($scope.data);
+
+      $http.post('/api/questionnaires', body).then(function () {
+        alert('Thanks');
+        //TODO redirect to thankyou page
+      });
     };
 
 

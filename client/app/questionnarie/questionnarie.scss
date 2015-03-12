@@ -3,3 +3,16 @@ caption{
   background-color: #e6e6e6;
   padding-left: 5px;
 }
+th{
+  text-align: center;
+}
+td{
+  text-align: center;
+}
+td:first-of-type {
+  text-align: left;
+}
+#logo {
+  position: relative;
+  top: -10px;
+}

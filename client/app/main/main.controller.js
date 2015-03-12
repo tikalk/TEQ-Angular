@@ -1,22 +1,11 @@
 'use strict';
 
 angular.module('teqAngularApp')
-  .controller('MainCtrl', function ($scope, $http) {
-    $scope.awesomeThings = [];
+  .controller('MainCtrl', function ($scope) {
+    $scope.groups = ['DevOps', 'Java', 'Javascript', 'Ruby', 'Android'];
 
-    $http.get('/api/things').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
-    });
+    $scope.encodeEmail = function () {
+      return btoa($scope.repEmail);
+    }
 
-    $scope.addThing = function() {
-      if($scope.newThing === '') {
-        return;
-      }
-      $http.post('/api/things', { name: $scope.newThing });
-      $scope.newThing = '';
-    };
-
-    $scope.deleteThing = function(thing) {
-      $http.delete('/api/things/' + thing._id);
-    };
   });

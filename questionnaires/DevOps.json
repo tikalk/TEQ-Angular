@@ -1,119 +1,161 @@
-{
-  "General": {
-    "Programming Languages": [
-      {"title": "C/C++"},
-      {"title": "Java"},
-      {"title": "Javascript"},
-      {"title": "Perl"},
-      {"title": "PHP"},
-      {"title": "Ruby"},
-      {"title": "Bash / Shell"},
-      {"title": "Python"}
-    ],
-    "Database": [
-      {"title": "SQL"},
-      {"title": "Designing Database Schema"},
-      {"title": "Writing SQL Statements"},
-      {"title": "Optimization and Tuning  (Please Specify Database)"}
-    ],
-    "MySQL": [
-      {"title": "Clustering"},
-      {"title": "Performance"},
-      {"title": "Tuning"}
-    ],
-    "BigData": [
+[
+  {
+    "title":"General",
+    "content": [
       {
-        "title": "NoSQL Database",
-        "options": [
-          "MongoDB",
-          "CouchDB",
-          "Cassandra",
-          "Redis",
-          "BigTable",
-          "HBase"
+        "title": "Programming Languages",
+        "content": [
+          {"title": "C/C++"},
+          {"title": "Java"},
+          {"title": "Javascript"},
+          {"title": "Perl"},
+          {"title": "PHP"},
+          {"title": "Ruby"},
+          {"title": "Bash / Shell"},
+          {"title": "Python"}
         ]
       },
       {
-        "title": "MapReduce",
-        "options": [
-          "Hadoop",
-          "Hive"
+        "title": "Database",
+        "content": [
+          {"title": "SQL"},
+          {"title": "Designing Database Schema"},
+          {"title": "Writing SQL Statements"},
+          {
+            "title": "Optimization and Tuning",
+            "type": "specify"
+          }
         ]
       },
       {
-        "title": "Servers",
-        "options": [
-          "EC2",
-          "GAE"
+        "title": "MySQL",
+        "content": [
+          {"title": "Clustering"},
+          {"title": "Performance"},
+          {"title": "Tuning"}
+        ]
+      },
+      {
+        "title": "NoSQL",
+        "content": [
+          {"title": "MongoDB"},
+          {"title": "CouchDB"},
+          {"title": "Cassandra"},
+          {"title": "Redis"},
+          {"title": "BigTable"},
+          {"title": "HBase"},
+          {"title": "Other", "type": "specify"}
+        ]
+      },
+      {
+        "title": "BigData",
+        "content": [
+          {"title": "MapReduce - Hadoop"},
+          {"title": "MapReduce - Hive"},
+          {"title": "Servers - EC2"},
+          {"title": "Servers - GAE"}
         ]
       }
     ]
   },
-  "Tools and Platforms": {
-    "Linux": [
-      {"title": "Linux OS administration"},
-      {"title": "Linux OS end user"},
-      {"title": "Clustering and High Availability"}
-    ],
-    "Virtualization": [
-      {"title": "KVM"},
-      {"title": "XEN"},
-      {"title": "OpenStack"},
-      {"title": "Vmware"}
-    ],
-    "Cloud": [
-      {"title": "AWS"},
-      {"title": "Azure"},
-      {"title": "Google cloud"},
-      {"title": "Rackspace"},
-      {"title": "Other"}
-    ],
-    "JBoss & Tomcat": [
-      {"title": "JBoss"},
-      {"title": "Tomcat"},
-      {"title": "Clustering"},
-      {"title": "Performance"},
-      {"title": "Tuning"}
-    ],
-    "Eclipse IDE, SCM & Bug Tracking": [
-      {"title": "Bugzilla"},
-      {"title": "Jira"},
-      {"title": "Subversion"},
-      {"title": "GIT"},
-      {"title": "Mercurial"},
-      {"title": "Other"}
-    ],
-    "Build Manager server": [
-      {"title": "Luntbuild"},
-      {"title": "Jenkins / Hudson"},
-      {"title": "Bamboo"},
-      {"title": "TeamCity"},
-      {"title": "Other"}
-    ],
-    "CM & Deploy Tools": [
-      {"title": "Chef"},
-      {"title": "Puppet"},
-      {"title": "Ansible"},
-      {"title": "Fabric"},
-      {"title": "Capistrano"},
-      {"title": "Other"}
-    ],
-    "Artifact Repository": [
-      {"title": "Artifactory"},
-      {"title": "Nexus"}
-    ],
-    "Orchestration": [
-      {"title": "CloudFormation / Opsworks"},
-      {"title": "Vagrant"},
-      {"title": "Docker"},
-      {"title": "Other"}
-    ],
-    "Build script": [
-      {"title": "ANT"},
-      {"title": "Maven"},
-      {"title": "Gradle"},
-      {"title": "Make"},
-      {"title": "SBT"}
+  {
+    "title": "Tools and Platforms",
+    "content": [
+      {
+        "title": "Linux",
+        "content": [
+          {"title": "Linux OS administration"},
+          {"title": "Linux OS end user"},
+          {"title": "Clustering and High Availability"}
+        ]
+      },
+      {
+        "title":"Virtualization",
+        "content": [
+          {"title": "KVM"},
+          {"title": "XEN"},
+          {"title": "OpenStack"},
+          {"title": "Vmware"}
+        ]
+      },
+      {
+        "title": "Cloud",
+        "content":[
+          {"title": "AWS"},
+          {"title": "Azure"},
+          {"title": "Google cloud"},
+          {"title": "Rackspace"},
+          {"title": "Other", "type": "specify"}
+        ]
+      },
+      {
+        "title": "JBoss & Tomcat",
+        "content": [
+          {"title": "JBoss"},
+          {"title": "Tomcat"},
+          {"title": "Clustering"},
+          {"title": "Performance"},
+          {"title": "Tuning"}
+        ]
+      },
+      {
+        "title": "Eclipse IDE, SCM & Bug Tracking",
+        "content": [
+          {"title": "Bugzilla"},
+          {"title": "Jira"},
+          {"title": "Subversion"},
+          {"title": "GIT"},
+          {"title": "Mercurial"},
+          {"title": "Other", "type": "specify"}
+        ]
+      },
+      {
+        "title": "Build Manager server",
+        "content": [
+          {"title": "Luntbuild"},
+          {"title": "Jenkins / Hudson"},
+          {"title": "Bamboo"},
+          {"title": "TeamCity"},
+          {"title": "Other", "type": "specify"}
+        ]
+      },
+      {
+        "title": "CM & Deploy Tools",
+        "content": [
+          {"title": "Chef"},
+          {"title": "Puppet"},
+          {"title": "Ansible"},
+          {"title": "Fabric"},
+          {"title": "Capistrano"},
+          {"title": "Other", "type": "specify"}
+        ]
+      },
+      {
+        "title": "Artifact Repository",
+        "content": [
+          {"title": "Artifactory"},
+          {"title": "Nexus"}
+        ]
+      },
+      {
+        "title": "Orchestration",
+        "content": [
+          {"title": "CloudFormation / Opsworks"},
+          {"title": "Vagrant"},
+          {"title": "Docker"},
+          {"title": "Other", "type": "specify"}
+        ]
+      },
+      {
+        "title": "Build script",
+        "content": [
+          {"title": "ANT"},
+          {"title": "Maven"},
+          {"title": "Gradle"},
+          {"title": "Make"},
+          {"title": "SBT"}
+        ]
+      }
     ]
   }
-}
+]
