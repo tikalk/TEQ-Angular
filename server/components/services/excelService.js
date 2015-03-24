@@ -38,7 +38,7 @@ module.exports = (function () {
         Object.keys(params).forEach(function(k) {
           commonFontParams[k] = params[k];
         })
-        return commonxFontParams;
+        return commonFontParams;
       }
 
       var sheet1 = workbook.createSheet(group, cols, rows);
