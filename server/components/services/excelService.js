@@ -53,17 +53,18 @@ module.exports = (function () {
         '1-Basic\n' +
         '2-Developer\n' +
         '3-Expert');
-      sheet1.fill(1, row, {type:'solid',fgColor:'FFFF00',bgColor:'64'});
       sheet1.font(1, row, {bold:'true'});
-
+      sheet1.fill(1, row, {type:'solid',fgColor:'FFFFFF00'});
       sheet1.wrap(1, row, 'true');
+
       sheet1.set(2, row, 'Subject');
       sheet1.font(2, row, {bold:'true'});
+      sheet1.fill(2, row, {type:'solid',fgColor:'FFFFFF00'});
 
       sheet1.set(3, row, 'Years of experience');
-      sheet1.wrap(3, row, 'true');
-      sheet1.fill(3, row, {type:'solid',fgColor:'FFFF00',bgColor:'64'});
       sheet1.font(3, row, {bold:'true'});
+      sheet1.fill(3, row, {type:'solid',fgColor:'FFFFFF00'});
+      sheet1.wrap(3, row, 'true');
 
       row++;
 
@@ -71,7 +72,7 @@ module.exports = (function () {
         sheet1.fill(1, row, {type:'solid',fgColor:'FFDDDDDD',bgColor:'64'});
         sheet1.fill(2, row, {type:'solid',fgColor:'FFDDDDDD',bgColor:'64'});
         sheet1.fill(3, row, {type:'solid',fgColor:'FFDDDDDD',bgColor:'64'});
-        sheet1.font(2, row, {bold:'true', fgColor: 'FFFF0000'});
+        sheet1.font(2, row, {bold:'true'});
 
         sheet1.set(2, row++, data[i].title);
 
