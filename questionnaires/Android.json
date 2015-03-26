@@ -1,0 +1,119 @@
+[
+	{
+		"title": "General",
+		"content": [
+			{
+				"title": "Programming Languages",
+				"content": [
+					{"title": "C/C++"},
+					{"title": "Java"},
+					{"title": "C#"},
+					{"title": "Perl"},
+					{"title": "PHP"},
+					{"title": "Ruby"},
+					{"title": "Python"}
+				]
+			},
+			{
+				"title": "Database",
+				"content": [
+					{"title": "SQL"},
+					{"title": "Designing Database Schema"},
+					{"title": "Creating ERD"},
+					{"title": "Writing SQL Statements"},
+					{"title": "Optimizing and Tuning (please specify database)", "type": "specify"}
+				]
+			}
+		]
+	},
+	{
+		"title": "Mobile Platform",
+		"content": [
+			{
+				"title": "Mobile OSes",
+				"content": [
+					{"title": "iOS (iPhone, iPad)"},
+					{"title": "Android"},
+					{"title": "Blackberry"},
+					{"title": "Symbian"}
+				]
+			},
+			{
+				"title": "Android Development",
+				"content": [
+					{"title": "Java"},
+					{"title": "NDK Development"},
+					{"title": "XML(UI Design)"},
+					{"title": "Gradle(Android Build System)"},
+					{"title": "Android Studio"},
+					{"title": "Hierarchy Viewer"},
+					{"title": "Traceview"},
+					{"title": "Profile GPU Rendering"},
+					{"title": "Debug GPU Overdraw"},
+					{"title": "GPU View Updates"},
+					{"title": "MAT - Memory Analyzer Tool"},
+					{"title": "Jenkins/Travis"},
+					{"title": "Android Wear"},
+					{"title": "Google Glass"},
+					{"title": "TDD on Android"},
+					{"title": "3d party integrations - Play services/FB/Twitter", "type": "specify"},
+					{"title": "HTML and Javascript"},
+					{"title": "Android SDK using Eclipse"},
+					{"title": "Google Play Submission Process"}
+				]
+			},
+			{
+				"title": "iOS Development",
+				"content": [
+					{"title": "Objective C"},
+					{"title": "HTML and Javascript / iPhone"},
+					{"title": "iOS SDK using Xcode"},
+					{"title": "App Store Submission Process"}
+				]
+			},
+			{
+				"title": "Libraries and Frameworks",
+				"content": [
+					{"title": "Adobe AIR for Mobile platforms"},
+					{"title": "OpenGL"},
+					{"title": "Unity3d"},
+					{"title": "Cocos2d"},
+					{"title": "jQuery Mobile"},
+					{"title": "Sencha Touch"}
+				]
+			}
+		]
+	},
+	{
+		"title": "Tools and Platforms",
+		"content": [
+			{
+				"title": "Desktop OS, power user - over 2 years experience",
+				"content": [
+					{"title": "Linux"},
+					{"title": "MacOSX"}
+				]
+			},
+			{
+				"title": "Local Databases",
+				"content": [
+					{"title": "Coredata"},
+					{"title": "SQLite"},
+					{"title": "Android Content Providers"}
+				]
+			},
+			{
+				"title": "ALM",
+				"content": [
+					{"title": "Git"},
+					{"title": "Subversion"},
+					{"title": "Hudson"},
+					{"title": "ANT"},
+					{"title": "Maven2"},
+					{"title": "Make"},
+					{"title": "Shell script"}
+				]
+			}
+		]
+	}
+]
