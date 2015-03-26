@@ -1,0 +1,102 @@
+[
+	{
+		"title": "General",
+		"content": [
+			{
+				"title": "Ruby",
+				"content": [
+					{"title": "Unit testing using RSpec"},
+					{"title": "Integration testing using Capybara"},
+					{"title": "Creating gems"},
+					{"title": "Profiler"},
+					{"title": "Interfacing with C"},
+					{"title": "Regular Expressions"}
+				]
+			},
+			{
+				"title": "Rails and Web",
+				"content": [
+					{"title": "Routing"},
+					{"title": "Assets Pipeline"},
+					{"title": "Slim view engine"},
+					{"title": "Haml view engine"},
+					{"title": "SCSS"},
+					{"title": "Coffeescript"},
+					{"title": "Rack App"},
+					{"title": "Sinatra App"},
+					{"title": "Contributing to Open Source Projects", "type": "specify"}
+				]
+			},
+			{
+				"title": "Deployment and Infrastructure",
+				"content": [
+					{"title": "Heroku"},
+					{"title": "Amazon EC2"},
+					{"title": "Rackspace"},
+					{"title": "Git"},
+					{"title": "New Relic"}
+		]
+			},
+			{
+				"title": "Programming Languages",
+				"content": [
+					{"title": "C/C++"},
+					{"title": "Java"},
+					{"title": "C#"},
+					{"title": "Perl"},
+					{"title": "PHP"},
+					{"title": "Ruby"},
+					{"title": "Python"}
+				]
+			},
+			{
+				"title": "Database",
+				"content": [
+					{"title": "SQL"},
+					{"title": "Designing Database Schema"},
+					{"title": "Creating ERD"},
+					{"title": "Writing SQL Statements"},
+					{"title": "Optimizing and Tuning (please specify database)", "type": "specify"}
+				]
+			},
+			{
+				"title": "Cloud",
+				"content": [
+					{"title": "Memcached"},
+					{"title": "MongoDB"},
+					{"title": "CouchDB"},
+					{"title": "Cassandra"},
+					{"title": "Redis"},
+					{"title": "Processing (Solr/Lucene, ElasticSearch, Sphinx)"}
+				]
+			},
+			{
+				"title": "Web",
+				"content": [
+					{
+						"title": "Javascript",
+						"content": [
+							{"title": "Node.js"},
+							{"title": "OOP"},
+							{"title": "jQuery"},
+							{"title": "ExtJS"},
+							{"title": "Angular"},
+							{"title": "Ember"},
+							{"title": "Underscore"},
+							{"title": "Backbone"}
+						]
+					},
+					{
+						"title": "Web Development",
+						"content": [
+							{"title": "HTML5"},
+							{"title": "CSS3"},
+							{"title": "AJAX"},
+							{"title": "Web Sockets"}
+						]
+					}
+				]
+			}
+		]
+	}
+]
