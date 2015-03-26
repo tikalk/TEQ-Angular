@@ -1,0 +1,172 @@
+[
+	{
+		"title": "General",
+		"content": [
+			{
+				"title": "Java Language",
+				"content": [
+					{"title": "Developing Java classes"},
+					{"title": "Using threads"}
+				]
+			},
+			{
+				"title": "Database",
+				"content": [
+					{"title": "SQL"},
+					{"title": "Designing Database Schema"},
+					{"title": "Creating ERD"},
+					{"title": "Writing SQL Statements"},
+					{"title": "Implementing Data Access Classes"},
+					{"title": "Optimization and Tuning (Please specify Database)",
+					 "type": "specify"}
+				]
+			},
+			{
+				"title": "Big Data",
+				"content": [
+					{"title": "NoSQL Database(MongoDB, CouchDB, Cassandra, Redis, BigTable, HBase)"},
+					{"title": "Map/Reduce (Hadoop, Hive)"},
+					{"title": "Servers (EC2, GAE)"},
+					{"title": "Search (Solr/Lucene, ElasticSearch)"},
+					{"title": "Spark"},
+					{"title": "Storm"},
+					{"title": "Kafka"},
+					{"title": "Vert.X"}
+				]
+			}
+		]
+	},
+	{
+		"title": "Frameworks and Libraries",
+		"content": [
+			{
+				"title": "Server side",
+				"content": [
+					{
+						"title": "Spring and Hibernate",
+						"content": [
+							{"title": "Hibernate"},
+							{"title": "Spring"},
+							{"title": "Spring Data"}
+						]
+					},
+					{
+						"title": "EJB3 and JPA",
+						"content": [
+							{"title": "EJB/EJB 3"},
+							{"title": "JPA"},
+							{"title": "JDBC"}
+						]
+					},
+					{
+						"title": "TypeSafe",
+						"content": [
+							{"title": "Scala"},
+							{"title": "Akka"},
+							{"title": "Play Framework"}
+						]
+					}
+				]
+			},
+			{
+				"title": "Client side",
+				"content": [
+					{
+						"title": "Java Web Frameworks",
+						"content": [
+							{"title": "JSP and TagLib"},
+							{"title": "MyFaces"},
+							{"title": "Struts/Struts2"},
+							{"title": "GWT"},
+							{"title": "Wicket"},
+							{"title": "Grails"}
+						]
+					},
+					{
+						"title": "Javascript/AJAX",
+						"content": [
+							{"title": "AJAX"},
+							{"title": "HTML and Javascript"},
+							{"title": "Dojo"},
+							{"title": "ExtJS"},
+							{"title": "Prototype"},
+							{"title": "AngularJS"},
+							{"title": "EmberJS"},
+							{"title": "BackboneJS"},
+							{"title": "NodeJS"},
+							{"title": "jQuery"}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Tools and Platforms",
+		"content": [
+			{
+				"title": "Linux",
+				"content": [
+					{"title": "Linux OS - desktop (end user)/server (administration) experience"},
+					{"title": "Linix OS - power user"},
+					{"title": "Writing scripts - shell/bash/cshell"},
+					{"title": "Clustering and Hight Availablity"},
+					{"title": "Install and Configure 3rd parties application - various daemon configuration /  administration"}
+				]
+			},
+			{
+				"title": "MySQL",
+				"content": [
+					{"title": "MySQL"},
+					{"title": "Clustering"},
+					{"title": "Performance"},
+					{"title": "Tuning"}
+				]
+			},
+			{
+				"title": "JBoss and Tomcat",
+				"content": [
+					{"title": "JBoss"},
+					{"title": "Tomcat"},
+					{"title": "Clustering"},
+					{"title": "Performance"},
+					{"title": "Tuning"}
+				]
+			},
+			{
+				"title": "CM/CI/CD",
+				"content": [
+					{"title": "Bugzilla"},
+					{"title": "Subversion"},
+					{"title": "Git"},
+					{"title": "Luntbuild"},
+					{"title": "Docker"},
+					{"title": "LogCollector(LogStash, Flume, Fluntd, etc)"},
+					{"title": "Vagrant"},
+					{"title": "Chef"},
+					{"title": "Puppet"},
+					{"title": "Hudson/Jenkins"}
+				]
+			},
+			{
+				"title": "Ant and Maven",
+				"content": [
+					{"title": "ANT"},
+					{"title": "Maven2"},
+					{"title": "Make"},
+					{"title": "Shell Script"}
+				]
+			},
+			{
+				"title": "Paas and Cloud Providers",
+				"content": [
+					{"title": "AWS"},
+					{"title": "Heroku"},
+					{"title": "Cloudfoundry"},
+					{"title": "RackSpace"},
+					{"title": "Open Stack"}
+				]
+			}
+		]
+	}
+]
