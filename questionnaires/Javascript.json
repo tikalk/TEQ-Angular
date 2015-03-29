@@ -1,0 +1,110 @@
+[
+	{
+		"title": "Javascript(Behavior)",
+		"content": [
+			{
+				"title": "Core Javascript",
+				"content": [
+					{"title": "Cross Browser Development"},
+					{"title": "Regular Expressions"},
+					{"title": "Javascript optimizing for performance"}
+				]
+			},
+			{
+				"title": "OOP Javascript",
+				"content": [
+					{"title": "Creating custom JS Classes"},
+					{"title": "Binding Events"},
+					{"title": "OOP Javascript"},
+					{"title": "Closures"}
+				]
+			},
+			{
+				"title": "Programming languages",
+				"content": [
+					{"title": "NodeJS"},
+					{"title": "Java"},
+					{"title": "C#"},
+					{"title": "Ruby"},
+					{"title": "Python"}
+				]
+			},
+			{
+				"title": "Database",
+				"content": [
+					{"title": "MongoDB"},
+					{"title": "CouchDB"},
+					{"title": "x-SQL (mysql, sql, other)"},
+					{"title": "other", "type": "specify"}
+				]
+			},
+			{
+				"title": "Ajax",
+				"content": [
+					{"title": "Cross browser Ajax"},
+					{"title": "Checking responses status"},
+					{"title": "Retrieving responses content"},
+					{"title": "Working with promises"}
+				]
+			},
+			{
+				"title": "Javascript frameworks",
+				"content": [
+					{"title": "jQuery"},
+					{"title": "Angular.js"},
+					{"title": "Backbone.js"},
+					{"title": "React.js"},
+					{"title": "Node.js"},
+					{"title": "Express.js"},
+					{"title": "Socket.io"},
+					{"title": "Sails.js"},
+					{"title": "other", "type": "specify"}
+				]
+			},
+			{
+				"title": "Javascript testing frameworks",
+				"content": [
+					{"title": "Jasmine"},
+					{"title": "Mocha"},
+					{"title": "Chai"},
+					{"title": "Karma"},
+					{"title": "Protractor"},
+					{"title": "Quinit"},
+					{"title": "other", "type": "specify"}
+				]
+			},
+			{
+				"title": "Javascript debug",
+				"content": [
+					{"title": "Firebug"},
+					{"title": "Chrome Devtools"},
+					{"title": "Developer Toolbar(IE)"},
+					{"title": "other", "type": "specify"}
+				]
+			},
+			{
+				"title": "Javascript EcmaScript Standard",
+				"content": [
+					{"title": "Ecmascript 6 (various improvements"},
+					{"title": "Ecmascript 5 (web workers, local storage, etc)"}
+				]
+			}
+		]
+	},
+	{
+		"title": "CSS(Presentation)",
+		"content": [
+			{
+				"title": "CSS",
+				"content": [
+					{"title": "CSS 3"},
+					{"title": "CSS 3 transitions and animations"},
+					{"title": "CSS Frameworks (Bootstrap, Foundation, etc)"},
+					{"title": "CSS Layouts (flexbox, creating layouts)"},
+					{"title": "LESS"},
+					{"title": "SASS"}
+				]
+			}
+		]
+	}
+]
