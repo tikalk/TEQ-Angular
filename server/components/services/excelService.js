@@ -2,7 +2,7 @@
  * Created by assafgannon on 3/11/15.
  */
 
-var excelbuilder = require('msexcel-builder-colorfix');
+var excelbuilder = require('msexcel-builder-fontfix');
 
 var experties = {
   Basic: 1,
@@ -28,7 +28,6 @@ module.exports = (function () {
       var rows = 200,
         cols = 3;
 
-
       var sheet1 = workbook.createSheet(group, cols, rows);
       sheet1.width(1, 30);
       sheet1.width(2, 30);
@@ -38,8 +37,8 @@ module.exports = (function () {
         for(var j=1;j<=rows;j++){
           sheet1.font(i, j,
             {
-              //name: 'Verdana',
-              family: '3',
+              name: 'Verdana',
+              family: '2',
               sz: '10'
             });
         }
@@ -54,32 +53,34 @@ module.exports = (function () {
         '1-Basic\n' +
         '2-Developer\n' +
         '3-Expert');
-      sheet1.fill(1, row, {type:'solid',fgColor:'FFFFFF00',bgColor:'64'});
       sheet1.font(1, row, {bold:'true'});
-
+      sheet1.fill(1, row, {type:'solid',fgColor: "FFFFFF00", bgColor:'64'});
       sheet1.wrap(1, row, 'true');
+
       sheet1.set(2, row, 'Subject');
       sheet1.font(2, row, {bold:'true'});
 
       sheet1.set(3, row, 'Years of experience');
-      sheet1.wrap(3, row, 'true');
-      sheet1.fill(3, row, {type:'solid',fgColor:'FFFFFF00',bgColor:'64'});
       sheet1.font(3, row, {bold:'true'});
+      sheet1.fill(3, row, {type:'solid',fgColor: "FFFFFF00", bgColor:'64'});
+      sheet1.wrap(3, row, 'true');
 
       row++;
 
       for(var i=0;i<data.length;i++){
-        sheet1.fill(1, row, {type:'solid',fgColor:'FFDDDDDD',bgColor:'64'});
-        sheet1.fill(2, row, {type:'solid',fgColor:'FFDDDDDD',bgColor:'64'});
-        sheet1.fill(3, row, {type:'solid',fgColor:'FFDDDDDD',bgColor:'64'});
-        sheet1.font(2, row, {bold:'true', color: 'FFFF0000'});
+        //sheet1.fill(1, row, {type:'solid',fgColor:'FFDDDDDD',bgColor:'64'});
+        //sheet1.fill(2, row, {type:'solid',fgColor:'FFFF6600',bgColor:'64'});
+        //sheet1.fill(3, row, {type:'solid',fgColor:'FFDDDDDD',bgColor:'64'});
+        sheet1.font(1, row, {bold:'true', color: "red"});
+        sheet1.font(2, row, {bold:'true', color: "#FF6600"});
+        sheet1.font(3, row, {bold:'true', color: "0FF"});
 
         sheet1.set(2, row++, data[i].title);
 
         for(var j=0;j<data[i].content.length;j++){
-          sheet1.fill(1, row, {type:'solid',fgColor:'FFF0F0F0',bgColor:'64'});
-          sheet1.fill(2, row, {type:'solid',fgColor:'FFF0F0F0',bgColor:'64'});
-          sheet1.fill(3, row, {type:'solid',fgColor:'FFF0F0F0',bgColor:'64'});
+          sheet1.fill(1, row, {type:'solid',fgColor:'FFFF0F0F0',bgColor:'64'});
+          sheet1.fill(2, row, {type:'solid',fgColor:'FFFF0F0F0',bgColor:'64'});
+          sheet1.fill(3, row, {type:'solid',fgColor:'FFFF0F0F0',bgColor:'64'});
 
           sheet1.set(2, row++, data[i].content[j].title);
           for(var k=0;k<data[i].content[j].content.length;k++) {
