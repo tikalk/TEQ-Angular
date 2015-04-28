@@ -4,5 +4,7 @@
 
 > bower install
 
+> grunt build
+
 > node server/app.js
 
