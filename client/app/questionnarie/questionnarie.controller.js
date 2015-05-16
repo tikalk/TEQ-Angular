@@ -24,7 +24,7 @@ angular.module('teqAngularApp')
     };
 
     $scope.sendQuestionnarie = function () {
-      $scope.showThankyou = false;
+      $scope.showThankyou = true;
       var body = {
         replyTo: $stateParams.replyToEmail,
         name: $scope.name,

@@ -5,15 +5,14 @@
 'use strict';
 
 var nodemailer = require('nodemailer');
+var local = require('../../config/local.env');
 
 // create reusable transporter object using SMTP transport
 var transporter = nodemailer.createTransport({
   service: 'Gmail',
-  auth: {
-    user: 'tikalk.teq@gmail.com',
-    pass: 'ComeOnToMe'
-  }
+    auth: local.email.auth
 });
+
 
 module.exports = (function () {
   return {
